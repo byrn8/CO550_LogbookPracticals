@@ -1,0 +1,17 @@
+﻿@page
+@model LB1.Pages.NameInputModel
+@{
+    ViewData["Title"] = "NameInput";
+}
+
+<h1>Name Input</h1>
+
+<p>Enter your name</p>
+
+<form method="POST">
+    <div>Name: <input asp-for="name" /></div>
+    <input type="submit" />
+</form>
+
+<div id="result">@this.Model.name</div>
+

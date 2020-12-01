@@ -1,0 +1,19 @@
+﻿@page
+@model LB1.Pages.CurrencyConverterModel
+@{
+    ViewData["Title"] = "CurrencyConverter";
+}
+
+<h1>Currency Converter</h1>
+
+<p>Enter the currecny in pounds</p>
+
+<form method="POST">
+    <input name="amount" /> <p style="display: inline">Pounds to euros</p>
+    <input type="submit" name="send" style="display: block" />
+</form>
+
+<div id="result">
+    <p>@this.Model.amount pounds is equal to @this.Model.result Euros</p>
+</div>
+
